@@ -1,1 +1,1 @@
-body{display:grid}.overview{display:grid;grid-template-columns:repeat(12, 1fr);grid-template-rows:repeat(4, 1fr)}.overview img{grid-column:4 / span 8;grid-row:1}
+body{display:grid}.overview{display:grid;grid-template-columns:repeat(12, 1fr);grid-template-rows:repeat(4, 1fr)}.overview img{grid-column:4 / span 8;grid-row:1}.overview{display:grid;grid-template-columns:repeat(2, 1fr);height:100vh}.overview .intro{grid-column:6}
