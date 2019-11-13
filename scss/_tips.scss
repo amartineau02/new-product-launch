@@ -3,4 +3,20 @@
 	grid-template-columns: repeat(15, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	height: 100vh;
+	.header {
+		grid-column: 6 / span 10;
+		grid-row: 1;
+	}
+	.random {
+		grid-column: 2 / span 3;
+		grid-row: 2;
+	}
+	.oc {
+		grid-column: 6 / span 3;
+		grid-row: 2;
+	}
+	.continue {
+		grid-column: 12 / span 3;
+		grid-row: 2;
+	}
 }
