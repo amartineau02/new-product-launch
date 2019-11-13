@@ -1,3 +1,22 @@
 body {
 	display: grid;
+	background-color: $cream;
+}
+
+h1 {
+	font-family: 'Yellowtail';
+	font-size: 5rem;
+	color: $text;
+}
+
+h2 {
+	font-family: 'Georgia';
+	font-size: 2.5rem;
+	color: $green;
+}
+
+p {
+	font-family: 'Georgia';
+	font-size: 1.2rem;
+	color: $text;
 }
