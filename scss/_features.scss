@@ -7,31 +7,40 @@
 	.ft {
 		grid-column: 1;
 		grid-row: 1;
-		align-self: end;
+		height: 50vh;
+		background-color: $green;
+		align-self: center;
+		padding: 1rem;
 	}
 	.recycle {
 		grid-column: 2 / span 2;
 		grid-row: 1;
 		align-self: end;
+		height: 50vh;
+		background-image: url(../img/allover.jpg);
 	}
 	.place {
 		grid-column: 4 / span 2;
 		grid-row: 1;
 		align-self: end;
+		height: 50vh;
 	}
 	.paper {
 		grid-column: 1 / span 2;
 		grid-row: 2;
 		align-self: end;
+		height: 50vh;
 	}
 	.prompt {
 		grid-column: 3 / span 2;
 		grid-row: 2;
 		align-self: end;
+		height: 50vh;
 	}
 	.cover {
 		grid-column: 5;
 		grid-row: 2;
 		align-self: end;
+		height: 50vh;
 	}
 }
