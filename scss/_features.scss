@@ -18,29 +18,48 @@
 		align-self: end;
 		height: 50vh;
 		background-image: url(../img/allover.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 	.place {
 		grid-column: 4 / span 2;
 		grid-row: 1;
 		align-self: end;
 		height: 50vh;
+		background-image: url(../img/workspace.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 	.paper {
 		grid-column: 1 / span 2;
 		grid-row: 2;
 		align-self: end;
 		height: 50vh;
+		background-image: url(../img/cursive.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 	.prompt {
 		grid-column: 3 / span 2;
 		grid-row: 2;
 		align-self: end;
 		height: 50vh;
+		background-image: url(../img/widepen.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 	.cover {
 		grid-column: 5;
 		grid-row: 2;
 		align-self: end;
 		height: 50vh;
+		background-image: url(../img/spread.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 }

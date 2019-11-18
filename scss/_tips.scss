@@ -10,13 +10,16 @@
 	.random {
 		grid-column: 2 / span 3;
 		grid-row: 2;
+		background-image: url(../img/list.jpg);
 	}
 	.oc {
 		grid-column: 6 / span 3;
 		grid-row: 2;
+		background-image: url(../img/prepare.jpg);
 	}
 	.continue {
 		grid-column: 12 / span 3;
 		grid-row: 2;
+		background-image: url(../img/quest.jpg);
 	}
 }
