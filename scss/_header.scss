@@ -15,6 +15,14 @@ h2 {
 	color: $green;
 }
 
+h3 {
+	font-family: 'Georgia';
+	color: $green;
+}
+h3 + p {
+	font-size: 1rem;
+}
+
 p {
 	font-family: 'Georgia';
 	font-size: 1.2rem;
