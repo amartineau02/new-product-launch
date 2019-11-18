@@ -1,6 +1,10 @@
 body {
 	display: grid;
 	background-color: $cream;
+	.top {
+		grid-template-columns: 1fr 1fr 1fr 3fr 4fr;
+		grid-template-rows: 3fr 2fr 1fr;
+	}
 }
 
 h1 {
