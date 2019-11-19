@@ -6,14 +6,13 @@
 	h2 {
 		margin: 0;
 		padding: 1rem;
-		// background-color: rgba(0,0,0,.4);
 		color: $text;
 	}
 	div {
+		display: grid;
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-		display: grid;
 		* {
 			align-self: end;
 		}
