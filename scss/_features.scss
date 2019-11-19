@@ -10,9 +10,12 @@
 	}
 	div {
 		display: grid;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+		border-style: solid;
+		border-color: $white;
+		border-top-width: 0px;
+		border-left-width: 0px;
+		border-right-width: 5px;
+		border-bottom-width: 5px;
 		* {
 			align-self: end;
 		}
@@ -23,35 +26,82 @@
 		background-color: $green;
 		padding: 1rem;
 		margin-top: -2rem;
+		border-right-width: 0px;
 	}
 	.recycle {
 		grid-column: 2 / span 2;
 		grid-row: 1;
 		height: 50vh;
-		background-image: url(../img/allover.jpg);
+		background: 
+		    linear-gradient(
+		      rgba(0, 0, 0, 0), 
+		      rgba(232, 221, 205, 0.95)
+		    ),
+		    url("../img/allover.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		border-left-width: 5px;
 	}
 	.place {
 		grid-column: 4 / span 2;
 		grid-row: 1;
 		height: 50vh;
-		background-image: url(../img/workspace.jpg);
+		background: 
+		    linear-gradient(
+		      rgba(0, 0, 0, 0), 
+		      rgba(232, 221, 205, 0.95)
+		    ),
+		    url("../img/workspace.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		border-right-width: 0px;
 	}
 	.paper {
 		grid-column: 1 / span 2;
 		grid-row: 2;
 		height: 50vh;
-		background-image: url(../img/cursive.jpg);
+		background: 
+		    linear-gradient(
+		      rgba(0, 0, 0, 0), 
+		      rgba(232, 221, 205, 0.95)
+		    ),
+		    url("../img/cursive.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		border-bottom-width: 0px;
 	}
 	.prompt {
 		grid-column: 3 / span 2;
 		grid-row: 2;
 		height: 50vh;
-		background-image: url(../img/widepen.jpg);
+		background: 
+		    linear-gradient(
+		      rgba(0, 0, 0, 0), 
+		      rgba(232, 221, 205, 0.95)
+		    ),
+		    url("../img/widepen.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		border-bottom-width: 0px;
 	}
 	.cover {
 		grid-column: 5;
 		grid-row: 2;
 		height: 50vh;
-		background-image: url(../img/spread.jpg);
+		background: 
+		    linear-gradient(
+		      rgba(0, 0, 0, 0), 
+		      rgba(232, 221, 205, 0.95)
+		    ),
+		    url("../img/spread.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		border-right-width: 0px;
+		border-bottom-width: 0px;
 	}
 }
