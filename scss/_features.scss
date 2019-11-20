@@ -282,6 +282,7 @@
 			background-position: center;
 			background-size: cover;
 			border-left-width: 5px;
+			border-right-width: 5px;
 		}
 		.place {
 			grid-column: 4 / span 2;
@@ -312,6 +313,7 @@
 			background-position: center;
 			background-size: cover;
 			border-bottom-width: 0px;
+			border-right-width: 5px;
 		}
 		.prompt {
 			grid-column: 3 / span 2;
