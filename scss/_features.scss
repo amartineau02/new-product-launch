@@ -1,10 +1,11 @@
-.features {
+@media screen and (min-width: 40em) {
+	.features {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat (2, 1fr);
-	height: 100vh;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: repeat(3, 1fr);
 	h2 {
 		margin: 0;
+		font-size: 2rem;
 		padding: 1rem;
 		color: $text;
 	}
@@ -12,7 +13,7 @@
 		display: grid;
 		border-style: solid;
 		border-color: $white;
-		border-top-width: 0px;
+		border-width: 0px;
 		border-left-width: 0px;
 		border-right-width: 5px;
 		border-bottom-width: 5px;
@@ -29,7 +30,7 @@
 		border-right-width: 0px;
 	}
 	.recycle {
-		grid-column: 2 / span 2;
+		grid-column: 2;
 		grid-row: 1;
 		height: 50vh;
 		background: 
@@ -42,10 +43,11 @@
 		background-position: center;
 		background-size: cover;
 		border-left-width: 5px;
+		border-right-width: 0px;
 	}
 	.place {
-		grid-column: 4 / span 2;
-		grid-row: 1;
+		grid-column: 1;
+		grid-row: 2;
 		height: 50vh;
 		background: 
 		    linear-gradient(
@@ -59,7 +61,7 @@
 		border-right-width: 0px;
 	}
 	.paper {
-		grid-column: 1 / span 2;
+		grid-column: 2;
 		grid-row: 2;
 		height: 50vh;
 		background: 
@@ -71,11 +73,12 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-		border-bottom-width: 0px;
+		border-left-width: 5px;
+		border-right-width: 0px;
 	}
 	.prompt {
-		grid-column: 3 / span 2;
-		grid-row: 2;
+		grid-column: 1;
+		grid-row: 3;
 		height: 50vh;
 		background: 
 		    linear-gradient(
@@ -86,11 +89,12 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+		border-right-width: 0px;
 		border-bottom-width: 0px;
 	}
 	.cover {
-		grid-column: 5;
-		grid-row: 2;
+		grid-column: 2;
+		grid-row: 3;
 		height: 50vh;
 		background: 
 		    linear-gradient(
@@ -103,5 +107,117 @@
 		background-size: cover;
 		border-right-width: 0px;
 		border-bottom-width: 0px;
+		border-left-width: 5px;
+	}
+}
+}
+
+@media screen and (min-width: 60em) {
+	.features {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat (2, 1fr);
+		height: 100vh;
+		h2 {
+			margin: 0;
+			padding: 1rem;
+			color: $text;
+		}
+		div {
+			display: grid;
+			border-style: solid;
+			border-color: $white;
+			border-top-width: 0px;
+			border-left-width: 0px;
+			border-right-width: 5px;
+			border-bottom-width: 5px;
+			* {
+				align-self: end;
+			}
+		}
+		.ft {
+			grid-column: 1;
+			grid-row: 1;
+			background-color: $green;
+			padding: 1rem;
+			margin-top: -2rem;
+			border-right-width: 0px;
+		}
+		.recycle {
+			grid-column: 2 / span 2;
+			grid-row: 1;
+			height: 50vh;
+			background: 
+			    linear-gradient(
+			      rgba(0, 0, 0, 0), 
+			      rgba(232, 221, 205, 0.95)
+			    ),
+			    url("../img/allover.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-left-width: 5px;
+		}
+		.place {
+			grid-column: 4 / span 2;
+			grid-row: 1;
+			height: 50vh;
+			background: 
+			    linear-gradient(
+			      rgba(0, 0, 0, 0), 
+			      rgba(232, 221, 205, 0.95)
+			    ),
+			    url("../img/workspace.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-right-width: 0px;
+		}
+		.paper {
+			grid-column: 1 / span 2;
+			grid-row: 2;
+			height: 50vh;
+			background: 
+			    linear-gradient(
+			      rgba(0, 0, 0, 0), 
+			      rgba(232, 221, 205, 0.95)
+			    ),
+			    url("../img/cursive.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-bottom-width: 0px;
+		}
+		.prompt {
+			grid-column: 3 / span 2;
+			grid-row: 2;
+			height: 50vh;
+			background: 
+			    linear-gradient(
+			      rgba(0, 0, 0, 0), 
+			      rgba(232, 221, 205, 0.95)
+			    ),
+			    url("../img/widepen.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-bottom-width: 0px;
+		}
+		.cover {
+			grid-column: 5;
+			grid-row: 2;
+			height: 50vh;
+			background: 
+			    linear-gradient(
+			      rgba(0, 0, 0, 0), 
+			      rgba(232, 221, 205, 0.95)
+			    ),
+			    url("../img/spread.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-right-width: 0px;
+			border-bottom-width: 0px;
+		}
 	}
 }
