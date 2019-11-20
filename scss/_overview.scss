@@ -73,6 +73,9 @@
 				margin-top: 3rem;
 				align-self: end;
 				z-index: 1;
+				img {
+					width: 100%;
+				}
 			}
 			.open {
 				grid-column: 1 / span 3;
@@ -128,6 +131,9 @@
 				grid-row: 1;
 				align-self: start;
 				z-index:1;
+				img {
+					width: 100%;
+				}
 			}
 			.open {
 				grid-column: 2 / span 3;
