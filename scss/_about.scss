@@ -1,19 +1,24 @@
 .about {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(12, 1fr);
 	background-image: url(../img/group3.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
+	//SEPARATE
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: .5fr .5fr 2fr;
 	.us {
-		grid-column: 2 / span 5;
-		grid-row: 1 / span 2;
+		grid-column: 1;
+		grid-row: 1;
+		text-align: center;
+		align-self: center;
+		h1 {
+			margin: 0;
+		}
 	}
 	.summary {
-		grid-column: 1 / span 6;
-		grid-row: 4 / span 4;
+		grid-column: 1;
+		grid-row: 2;
 		padding: 2rem 2rem 2rem 4rem;
 		background-color: $brown;
 		z-index: 1;
@@ -28,79 +33,275 @@
 		}
 	}
 	.email {
-		grid-column: 6 / span 7;
-		grid-row: 3 / span 10;
+		grid-column: 1;
+		grid-row: 3;
 		background-color: $white;
 		h2 {
-			text-align: right;
-			padding-left: 4rem;
 			text-align: center;
 		}
 		.grid-x {
 			display: grid;
-			grid-template-columns: 1.5fr 2fr 3fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
 			grid-gap: 2em;
+			margin: 0rem 2rem;
 			* {
-				grid-column: 2 / span 3;
+				grid-column: 1;
 				font-family: georgia;
+				margin-top: 1rem;
 				font-size: 1.2rem;
 				color: $text;
 			}
+			label {
+				grid-column: 1;
+				display: grid;
+			}
 			.name {
-				margin-top: 1rem;
-				grid-row: 1;
-				.firstname {
-					width: 25%;
-					margin-right: 2rem;
-				}
-				.lastname {
-					width: 50%;
-				}
+				grid-row: 1 / span 2;
 			}
 			.comp {
 				grid-row: 2;
-				.compmail {
-					width: 82%;
-				}
 			}
-			.add {
+			.address {
 				grid-row: 3;
-				.address {
-					width: 82%;
-				}
 			}
 			.place {
-				grid-row: 4;
-				.city {
-					width: 25%;
-					margin-right: 2rem;
-				}
-				.state {
-					width: 50%;
-				}
+				grid-row: 4 / span 2;
 			}
 			.button {
-				grid-row: 5;
+				grid-column: 1;
+				grid-row: 6;
+				align: start;
 				background-color: $green;
 				color: $white;
 				height: auto;
-				width: 50%;
 			}
 		}
 	}
 	.info {
-		grid-column: 6 / span 7;
-		grid-row: 11 / span 2;
-		align-self: end;
-		background-color: $white;
+		grid-column: 1;
+		grid-row: 3;
 		font-style: italic;
+		align-self: end;
 		ul {
 			list-style-type: none;
 		}
 		p {
 			margin: 0;
 		}
+	}
+}
 
+
+
+
+@media screen and (min-width: 40em) {
+	.about {
+		background-image: url(../img/group3.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		//SEPARATE
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: .5fr .5fr 2fr;
+		.us {
+			grid-column: 1;
+			grid-row: 1;
+			text-align: center;
+			align-self: center;
+			h1 {
+				margin: 0;
+			}
+		}
+		.summary {
+			grid-column: 1;
+			grid-row: 2;
+			padding: 2rem 2rem 2rem 4rem;
+			background-color: $brown;
+			z-index: 1;
+			h2, p {
+				margin: 0;
+			}
+			h2 {
+				margin-bottom: 1rem;
+			}
+			p {
+				font-size: 1rem;
+			}
+		}
+		.email {
+			grid-column: 1;
+			grid-row: 3;
+			background-color: $white;
+			h2 {
+				text-align: right;
+				padding-left: 4rem;
+				text-align: center;
+			}
+			.grid-x {
+				display: grid;
+				grid-template-columns: repeat(6, 1fr);
+				grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+				grid-gap: 2em;
+				* {
+					grid-column: 2 / span 4;
+					font-family: georgia;
+					margin-top: 1rem;
+					font-size: 1.2rem;
+					color: $text;
+				}
+				label {
+					grid-column: 2 / span 4;
+					display: grid;
+				}
+				.name {
+					grid-row: 1 / span 2;
+				}
+				.comp {
+					grid-row: 2;
+				}
+				.address {
+					grid-row: 3;
+				}
+				.place {
+					grid-row: 4 / span 2;
+				}
+				.button {
+					grid-column: 3 / span 2;
+					grid-row: 6;
+					align: start;
+					background-color: $green;
+					color: $white;
+					height: auto;
+				}
+			}
+		}
+		.info {
+			grid-column: 1;
+			grid-row: 3;
+			font-style: italic;
+			align-self: end;
+			ul {
+				list-style-type: none;
+			}
+			p {
+				margin: 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+@media screen and (min-width: 60em) {
+	.about {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(12, 1fr);
+		background-image: url(../img/group3.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 100vh;
+		.us {
+			grid-column: 2 / span 5;
+			grid-row: 1 / span 2;
+		}
+		.summary {
+			grid-column: 1 / span 6;
+			grid-row: 4 / span 4;
+			padding: 2rem 2rem 2rem 4rem;
+			background-color: $brown;
+			z-index: 1;
+			h2, p {
+				margin: 0;
+			}
+			h2 {
+				margin-bottom: 1rem;
+			}
+			p {
+				font-size: 1rem;
+			}
+		}
+		.email {
+			grid-column: 6 / span 7;
+			grid-row: 3 / span 10;
+			background-color: $white;
+			h2 {
+				text-align: right;
+				padding-left: 4rem;
+				text-align: center;
+			}
+			.grid-x {
+				display: grid;
+				grid-template-columns: 1.5fr 2fr 3fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
+				grid-gap: 2em;
+				* {
+					grid-column: 2 / span 3;
+					font-family: georgia;
+					font-size: 1.2rem;
+					color: $text;
+				}
+				.name {
+					margin-top: 1rem;
+					grid-row: 1;
+					.firstname {
+						width: 25%;
+						margin-right: 2rem;
+					}
+					.lastname {
+						width: 50%;
+					}
+				}
+				.comp {
+					grid-row: 2;
+					.compmail {
+						width: 82%;
+					}
+				}
+				.add {
+					grid-row: 3;
+					.address {
+						width: 82%;
+					}
+				}
+				.place {
+					grid-row: 4;
+					.city {
+						width: 25%;
+						margin-right: 2rem;
+					}
+					.state {
+						width: 50%;
+					}
+				}
+				.button {
+					grid-row: 5;
+					background-color: $green;
+					color: $white;
+					height: auto;
+					width: 50%;
+				}
+			}
+		}
+		.info {
+			grid-column: 6 / span 7;
+			grid-row: 11 / span 2;
+			align-self: end;
+			background-color: $white;
+			font-style: italic;
+			ul {
+				list-style-type: none;
+			}
+			p {
+				margin: 0;
+			}
+
+		}
 	}
 }

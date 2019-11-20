@@ -1,3 +1,131 @@
+.bot {
+	background-image: url(../img/tabgroup2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	// TIPS & TRICKS
+	.tips {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 3fr 3fr 3fr;
+		grid-gap: 1.5em;
+		margin: 2rem;
+		.header {
+			grid-column: 1;
+			grid-row: 1;
+			padding-top: 2rem;
+			h1 {
+				margin: 0;
+				font-size: 5rem;
+				text-align: center;
+			}
+		}
+		.random {
+			grid-column: 1;
+			grid-row: 2;
+			background-image: url(../img/list.jpg);
+		}
+		.oc {
+			grid-column: 1;
+			grid-row: 3;
+			background-image: url(../img/prepare.jpg);
+		}
+		.continue {
+			grid-column: 1;
+			grid-row: 4;
+			background-image: url(../img/quest.jpg);
+			background-position: center;
+		}
+		// CARDS SPECIFICS
+		.card {
+			background-color: #fff;
+			overflow: hidden;
+			position: relative;
+			h2 {
+				margin: 0;
+				background-color: $text;
+				color: $spec;
+				height: 100%;
+				padding: 1.2rem;
+				transform: translateY(74%);
+				transition: all .4s;
+				font-size: 1.8rem;
+				&:hover {
+				  transform: translateY(0%);
+				}
+			}
+		}
+		.overlay-content {
+		  	position: absolute;
+		  	top: 0;
+		  	left: 0;
+		  	width: 100%;
+		  	height: 100%;
+		  	background-color: $text;
+		  	transform: translateY(100%);
+		  	transition: all .4s;
+		  	p {
+		  		margin: 0;
+		  		padding: 2rem;
+		  		line-height: 1.5;
+		  		font-size: 1.1rem;
+		  		color: $cream;
+		  	}
+		}
+		.show-content {
+		  	transform: translateY(0);
+		}
+	}
+	// FAQ SECTION
+	.faq {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		grid-row-gap: 1.5em;
+		div {
+			padding: 0rem 1rem 0rem 1rem;
+		}
+		h3 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1.3rem;
+			margin-bottom: .5rem;
+		}
+		.faqtitle {
+			grid-column: 1 / span 2;
+			grid-row: 1;
+			align-self: center;
+			margin-top: 2rem;
+			h1 {
+				margin: 0;
+			}
+		}
+		.first {
+			grid-column: 2 / span 4;
+			grid-row: 2;
+			background-color: $white;
+		}
+		.second {
+			grid-column: 2 / span 4;
+			grid-row: 3;
+			background-color: $white;
+		}
+		.third {
+			grid-column: 2 / span 4;
+			grid-row: 4;
+			background-color: $white;
+		}
+		.fourth {
+			grid-column: 2 / span 4;
+			grid-row: 5;
+			background-color: $white;
+		}
+	}
+}
+
+
+
 @media screen and (min-width: 40em) {
 	.bot {
 		background-image: url(../img/tabgroup2.png);
@@ -10,6 +138,7 @@
 			grid-template-columns: repeat(5, 1fr);
 			grid-template-rows: 1fr 3fr 3fr 3fr;
 			grid-gap: 1.5em;
+			margin-bottom: 2rem;
 			.header {
 				grid-column: 2 / span 3;
 				grid-row: 1;
