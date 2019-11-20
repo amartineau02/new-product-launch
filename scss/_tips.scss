@@ -24,17 +24,25 @@
 			grid-column: 1;
 			grid-row: 2;
 			background-image: url(../img/list.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
 		}
 		.oc {
 			grid-column: 1;
 			grid-row: 3;
 			background-image: url(../img/prepare.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
 		}
 		.continue {
 			grid-column: 1;
 			grid-row: 4;
 			background-image: url(../img/quest.jpg);
+			background-repeat: no-repeat;
 			background-position: center;
+			background-size: cover;
 		}
 		// CARDS SPECIFICS
 		.card {
